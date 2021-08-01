@@ -6,10 +6,9 @@
   "author": "yallu201 <dlruddlf07@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \" node dist/index.js\""
   },
   "devDependencies": {
-    "ts-watch": "^1.0.8"
+    "tsc-watch": "^4.4.0"
   }
 }
