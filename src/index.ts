@@ -1,5 +1,15 @@
-function sayHi(name: string, age: number): string {
-  return `Hello ${name}, you are ${age}`;
+interface Human {
+  name: string;
+  age: number;
+  gender: string;
+}
+const Person = {
+  name: "yallu",
+  age: 29,
+  gender: "male",
+};
+function sayHi(person: Human): string {
+  return `Hello ${person.name}, you are ${person.age}`;
 }
 
-sayHi("yallu", 28);
+console.log(sayHi(Person));
